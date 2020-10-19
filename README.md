@@ -174,3 +174,5 @@ Operator Lifecycle Manager is under Apache 2.0 license. See the [LICENSE][licens
 [proposals_docs]: ./doc/contributors/design-proposals
 [license_file]:./LICENSE
 [bug_guide]:./doc/dev/reporting_bugs.md
+
+changes
