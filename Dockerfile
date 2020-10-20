@@ -1,12 +1,8 @@
 FROM registry.svc.ci.openshift.org/ocp/builder:rhel-8-golang-1.15-openshift-4.7 AS builder
-
-
 ENV GO111MODULE auto
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
-
 WORKDIR /build
-
 # copy just enough of the git repo to parse HEAD, used to record version in OLM binaries
 COPY .git/HEAD .git/HEAD
 COPY .git/refs/heads/. .git/refs/heads
