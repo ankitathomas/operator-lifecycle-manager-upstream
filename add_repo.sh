@@ -21,7 +21,9 @@ for repo in $(cat tracked); do
 		git diff-index --quiet HEAD || exit_on_error "Git status not clean, aborting !!\\n\\n$(git status)"
 
 		# repo either newly created
+		ref=$(git show-ref remotes/$dir/master -s)
 		git subtree add --prefix="$dir/" "$dir" --squash master || exit_on_error "failed to add subtree" $?
+		echo "$ref" > $dir.UPSTREAM_VERSION
 		echo "Added new subtree $repo"
 	fi
 done
