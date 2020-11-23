@@ -8,6 +8,8 @@ COPY .git/HEAD .git/HEAD
 COPY .git/refs/heads/. .git/refs/heads
 RUN mkdir -p .git/objects
 
+
+
 COPY Makefile Makefile
 COPY OLM_VERSION OLM_VERSION
 COPY pkg pkg

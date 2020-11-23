@@ -161,6 +161,7 @@ See [reporting bugs][bug_guide] for details about reporting any issues.
 ## License
 
 Operator Lifecycle Manager is under Apache 2.0 license. See the [LICENSE][license_file] file for details.
+changes
 
 [architecture]: /doc/design/architecture.md
 [philosophy]: /doc/design/philosophy.md
@@ -175,4 +176,3 @@ Operator Lifecycle Manager is under Apache 2.0 license. See the [LICENSE][licens
 [license_file]:./LICENSE
 [bug_guide]:./doc/dev/reporting_bugs.md
 
-changes
